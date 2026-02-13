@@ -1,1 +1,4 @@
+This file demonstrates common RTL bugs caused by always @(*)
+and shows how always_comb prevents latch inference and
+sensitivity list errors through compile-time checks.
 
