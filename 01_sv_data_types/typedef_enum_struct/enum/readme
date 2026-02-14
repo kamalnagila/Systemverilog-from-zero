@@ -1,1 +1,1 @@
-
+This example demonstrates the use of SystemVerilog enumerated data types, including strong typing, iteration using built-in enum methods (first(), next(), num()), and waveform-visible transitions. A simple testbench is provided to illustrate simulation behavior
