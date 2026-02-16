@@ -1,0 +1,21 @@
+module packed_array(
+  
+  logic [31:0] data_in,
+  
+  output logic [31:0] data_out
+  
+);
+  
+ logic [3:0] [7:0] array; // treated as a single 32 bit vector
+
+  always_comb begin
+
+        array=data_in;
+  
+
+    //driving outputs
+          
+         data_out=array;
+     end
+
+endmodule
