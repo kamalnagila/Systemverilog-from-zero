@@ -1,0 +1,27 @@
+module packed_tb;
+
+  logic [31:0] data_in;
+  logic [7:0] unpacked_out;
+
+  // Instantiate the DUT
+  array dut (.*);
+
+  initial begin
+    $display("Starting unpacked array test bench...");
+
+    
+    data_in = 32'hABCDEFF0; 
+    
+    //  Added a small delay to allow combinational logic to propagate
+    #1; 
+
+  
+           if (unpacked_out == 8'hCD)
+            $display("SUCCESS: Unpacked array element [2] is: %h", unpacked_out);
+        else
+            $error("FAIL: Unpacked array element mismatch! Expected AD, got %h", unpacked_out);
+
+    $finish;
+  end
+
+endmodule
