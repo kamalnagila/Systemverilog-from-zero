@@ -1,1 +1,28 @@
+module packed_tb;
 
+  logic [31:0] data_in;
+  logic [31:0] packed_out;
+
+  // Instantiate the DUT
+  packed_array dut (.*);
+
+  initial begin
+    $display("Starting packed array test bench...");
+
+    
+    data_in = 32'hABCDEFF0; 
+    
+    //  Added a small delay to allow combinational logic to propagate
+    #1; 
+
+    //   check the output
+    if (packed_out == 32'hABCDEFF0)  
+      $display("SUCCESS: Packed array matches input: %h", packed_out);
+    else
+      $display("FAIL: Packed array mismatch! Expected %h, Got %h", 32'hABCDEFF0, packed_out);
+
+    // 
+    $finish;
+  end
+
+endmodule
