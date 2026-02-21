@@ -1,1 +1,19 @@
+Polymorphism in SystemVerilog allows a parent class handle to refer to different child class objects and execute the correct method implementation at runtime.
 
+This concept is fundamental to design verification and forms the backbone of UVM architecture
+
+>> Key Concepts Covered
+
+virtual methods in base classes
+
+Method overriding in derived classes
+
+Runtime method binding
+
+Parent handle referencing child objects
+
+Multiple child classes with common interfaces
+
+Abstract base classes (pure virtual methods)
+
+Transaction-level polymorphism (DV-oriented)
