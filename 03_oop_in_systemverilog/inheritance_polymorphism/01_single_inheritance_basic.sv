@@ -11,11 +11,11 @@ class child_class extends parent_class;
   
 endclass
 
-module inheritance;
+module inheritance_basic;
   
   initial begin
     
-    child_class c =new();
+    child_class c = new();
       
      c.addr=10;
       
@@ -33,3 +33,4 @@ endmodule
       
       
       
+
