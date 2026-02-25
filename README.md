@@ -7,7 +7,7 @@ The goal is to develop correctness, clarity, and reasoning skills required for p
 
 All examples are intentionally:
 
->> Small and isolated
+ Small and isolated
 >> Easy to debug and reason about
 >> Written to highlight why a construct exists, not just how to use it
 
